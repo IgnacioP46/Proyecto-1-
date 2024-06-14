@@ -32,7 +32,7 @@ body {
     --background-color-nav: #232946;
     --background-color-nav-a-hover: #eebbc3;
     --background-color-section: #fcfcff;
-    --background-color-gallery-item-button: #eebbc3;
+    --background-color-gallery-item-button: #dedce9;
     --background-color-main-gallery-item-button-hover: #232946;
     --background-color-footer: #232946;
     --color-header: #fffffe;
@@ -43,12 +43,12 @@ body {
     --color-h3: black;
     --color-p: black;
     --color-gallery-item-button: #232946;
-    --color-gallery-item-button-hover: #eebbc3;
+    --color-gallery-item-button-hover: #dedce9;
     --color-footer-links-a: #fffffe;
     --color-footer: #b8b7b7;
     --border-section: 1px solid #232946;
     --border-gallery-item: 1px solid #232946;
-    --border-gallery-item-button-hover: 1px solid #eebbc3;
+    --border-gallery-item-button-hover: 1px solid #dedce9;
 }
 
 nav {
@@ -274,7 +274,7 @@ footer .Facebook::before {
         grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
     }
 
-    iframe {
+    main iframe {
         display: none;
     }
 }
@@ -282,12 +282,24 @@ footer .Facebook::before {
 
 
 @media (min-width: 375px) and (max-width: 768px) {
+    nav {
+        justify-content: center;
+        align-content: center;
+    }
+
     nav a {
         display: none;
     }
 
-    nav.menu {
+    nav .menu {
         display: block;
+        justify-self: center;
+        align-self: center;
+    }
+
+    nav img:first-child {
+        justify-self: center;
+        align-self: center;
     }
 
     main {
@@ -304,6 +316,10 @@ footer .Facebook::before {
 }
 
 @media (max-width: 374px) {
+    nav {
+        justify-content: center;
+        align-content: center;
+    }
 
     nav a {
         display: none;
